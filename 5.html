@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var a = [0,1];
+    var i =0;
+    var result = 0;
+    do {
+        a[a.length] = a[a.length-1]+a[a.length-2];
+
+        i++
+
+    }while(i<18);
+
+    for (var j = 0 ; j < a.length;j++){
+        result += a[j];
+    }
+    alert(result)
+    
+</script>
+
+</body>
+</html>

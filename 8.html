@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<input type="button" onclick="play();" value="Play">
+</center>
+<script>
+    function play() {
+
+        var a = parseInt(prompt("Khoang gia tri ban muon doan bat dau tu"));
+        if (a%1!=0 ){
+            alert("Moi ban nhap lai")
+        // }else if (a == " ") {
+        //     alert("Moi ban nhap lai");
+        }else{
+           var  b = parseInt(prompt("Khoang gia tri ban muon doan ket thuc tai"));
+            if (b % 1 != 0){
+                alert("Moi ban nhap lai");
+                // }else if (b == " "){
+                // alert("Moi ban nhap lai");
+            }else {
+                 var c = Math.floor(Math.random()*(b-a))+a;
+                 console.log(c);
+                 var d = prompt("Moi ban chon so bat ky");
+                if (d == c){
+                    alert("Chuc mung ban");
+                }else {
+                    var e = prompt("Chia buon cung ban, moi ban chon lan thu 2");
+                    if (e == c){
+                        alert("Chuc mung ban");
+                    }else {
+                        var f = prompt("Chia buon cung ban, moi ban chon lan thu 3");
+                        }if (f == c){
+                        alert("Chuc mung ban,cuoi cung cung chinh xac!");
+                            }else{
+                             alert("Ban qua den, chuc ban may man lan sau");
+                    }
+                }
+            }
+        }
+
+
+
+    }
+</script>
+</body>
+</html>
